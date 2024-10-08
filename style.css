@@ -27,11 +27,18 @@
   text-align: center;
   background-color: yellow;
   transition: background 0.2s linear, border-radius 1s ease-in 1s;
+  transform: rotate(180);
+
+  transform: matrix(1, 0.3, 1, 0, 0, 1);
+  transform: skew(20deg, 10deg);
+  animation: shake 2s infinite;
+  animation-direction: alternate;
 }
 .box1:hover {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
+  transform: scale(2, 1);
 }
 @keyframes slide {
   0% {
